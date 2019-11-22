@@ -1,0 +1,291 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+html, body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("https://images.unsplash.com/photo-1574365826123-a6f2681128fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+html #wrap .container, body #wrap .container {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.form-group .btn-sbm {
+  position: relative;
+  padding: 8px 30px;
+  color: #ffffff;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group .btn-sbm:hover {
+  color: #000000;
+  border: 1px solid #000000;
+  font-weight: 100;
+}
+
+.form-group .btn-sbm:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.form-group .btn-sbm:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.form-group .btn-sbm:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.form-group .btn-sbm:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body #wrap .container form.form {
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+body #wrap .container form.form .form-group {
+  width: 100%;
+  margin: .5rem 0 2rem 0;
+}
+
+body #wrap .container form.form .form-group input {
+  padding: 1rem 3rem;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: none;
+}
+
+body #wrap .container form.form .form-group input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+body #wrap .container form.form .error {
+  background: #D7263D;
+  color: #ffffff;
+}
+
+body #wrap .container .txt-ckeck {
+  text-align: center !important;
+  padding: 10px 0;
+}
+
+body #wrap header {
+  width: 100%;
+  position: relative;
+}
+
+body #wrap header ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+}
+
+body #wrap header ul li {
+  padding: 30px 45px;
+}
+
+body #wrap header ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 10px 20px;
+}
+
+body #wrap header ul li a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+body #wrap .container .row {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 5px;
+}
+
+body #wrap .container .row .header {
+  background: #01ace4;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100px;
+}
+
+body #wrap .container .row .header div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #wrap .container .row .header div:nth-child(1) div {
+  border: 1px solid #ffffff;
+  height: 100%;
+  margin: 0 5px;
+  line-height: 2.4rem;
+}
+
+body #wrap .container .row .header div:nth-child(2) {
+  margin: 0 10px;
+}
+
+body #wrap .container .row .header div:nth-child(2) span {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+body #wrap .container .row .works .wrap .list {
+  list-style: none;
+}
+
+body #wrap .container .row .works .wrap .list li {
+  display: block;
+  padding: 30px;
+  border-bottom: 1px solid #cccccc;
+}
+
+body #wrap .container .row .works .wrap .list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+body #wrap .container .row .works .wrap .list li a span, body #wrap .container .row .works .wrap .list li a i {
+  color: #000000 !important;
+  font-size: 1.5rem;
+}
+
+body #wrap .container .row .principal .wrap .form_work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #wrap .container .row .principal .wrap .form_work input {
+  border: none;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  outline: none;
+  color: #000000;
+}
+
+body #wrap .container .row .principal .wrap .form_work a {
+  padding: 10px 20px;
+  background: #ff2f2f;
+  border-top-left-radius: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
